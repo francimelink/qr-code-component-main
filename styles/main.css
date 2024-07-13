@@ -142,7 +142,9 @@ table {
     border-spacing: 0;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--body-bg-light-gray);
@@ -154,7 +156,44 @@ body {
 }
 
 .container {
+    border-radius: 1.25rem;
     background-color: var(--container-bg-white);
+    padding: 1rem;
+    max-width: 20rem;
+}
+
+.qr-container {
+    border-radius: .625rem;
+    width: 18rem;
+    height: 18rem;
+}
+
+.qr-container>picture,
+.qr-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: .625rem;
+}
+
+.text-container {
+    margin: 1.5rem 0;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.text-container>h1 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.text-container>p {
+    font-size: .9375rem;
+    color: var(--body-bg-light-gray);
+    line-height: 1.2;
 }
 
 .attribution {
